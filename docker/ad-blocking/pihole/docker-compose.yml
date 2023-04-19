@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    hostname: reprodevpihole
+    dns:
+      - 127.0.0.1
+      - 8.8.8.8
+    ports:
+      - "[YOURPIIPADDRESS]:53:53/tcp"
+      - "[YOURPIIPADDRESS]:53:53/udp"
+      - "67:67/udp"
+      - "1010:80/tcp"
+    environment:
+      TZ: 'Europe/London'
+      WEBPASSWORD: 'a5up3r53cr3tpa33'
+    volumes:
+      - '/home/pi/docker/files/appdata/config/pihole/etc-pihole:/etc/pihole'
+      - '/home/pi/docker/files/appdata/config/pihole/etc-dnsmasq.d:/etc/dnsmasq.d'
+    cap_add:
+      - NET_ADMIN
+    restart:
+      unless-stopped
