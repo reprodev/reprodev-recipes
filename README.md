@@ -27,8 +27,8 @@ We also welcome suggestions for new recipes and improvements to existing ones. I
 ---
 
 # Contact
-If# you have any questions or comments about ReproDev Recipes, please feel free to contact us by opening an issue in the repository.
+If you have any questions or comments about ReproDev Recipes, please feel free to contact us by opening an issue in the repository or subscribing to the site anf commenting.
 
 Thank you for using ReproDev Recipes! We hope you find these recipes helpful in your own projects
 
-Written with help from ChatGPT 19/04/2023
+**Written with help from ChatGPT 19/04/2023**
